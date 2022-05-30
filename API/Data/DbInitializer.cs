@@ -4,11 +4,11 @@ namespace API.Data;
 
 public static class DbInitializer
 {
-    public static void Initialize(StoreContext context)
-    {
-        if (context.Products.Any()) return;
+  public static void Initialize(StoreContext context)
+  {
+    if (context.Products.Any()) return;
 
-        var products = new List<Product>
+    var products = new List<Product>
         {
             new Product
             {
@@ -16,7 +16,7 @@ public static class DbInitializer
                 Description =
                     "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                 Price = 20000,
-                PictureUrl = "/images/products/sb-ang1.png",
+                PictureUrl = "http://picsum.photos/200?random=1",
                 Brand = "Angular",
                 Type = "Boards",
                 QuantityInStock = 100
@@ -26,7 +26,7 @@ public static class DbInitializer
                 Name = "Green Angular Board 3000",
                 Description = "Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus.",
                 Price = 15000,
-                PictureUrl = "/images/products/sb-ang2.png",
+                PictureUrl = "http://picsum.photos/200?random=2",
                 Brand = "Angular",
                 Type = "Boards",
                 QuantityInStock = 100
@@ -37,7 +37,7 @@ public static class DbInitializer
                 Description =
                     "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
                 Price = 18000,
-                PictureUrl = "/images/products/sb-core1.png",
+                PictureUrl = "http://picsum.photos/200?random=3",
                 Brand = "NetCore",
                 Type = "Boards",
                 QuantityInStock = 100
@@ -48,7 +48,7 @@ public static class DbInitializer
                 Description =
                     "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
                 Price = 30000,
-                PictureUrl = "/images/products/sb-core2.png",
+                PictureUrl = "http://picsum.photos/200?random=4",
                 Brand = "NetCore",
                 Type = "Boards",
                 QuantityInStock = 100
@@ -59,7 +59,7 @@ public static class DbInitializer
                 Description =
                     "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                 Price = 25000,
-                PictureUrl = "/images/products/sb-react1.png",
+                PictureUrl = "http://picsum.photos/200?random=5",
                 Brand = "React",
                 Type = "Boards",
                 QuantityInStock = 100
@@ -70,7 +70,7 @@ public static class DbInitializer
                 Description =
                     "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                 Price = 12000,
-                PictureUrl = "/images/products/sb-ts1.png",
+                PictureUrl = "http://picsum.photos/200?random=6",
                 Brand = "TypeScript",
                 Type = "Boards",
                 QuantityInStock = 100
@@ -81,7 +81,7 @@ public static class DbInitializer
                 Description =
                     "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                 Price = 1000,
-                PictureUrl = "/images/products/hat-core1.png",
+                PictureUrl = "http://picsum.photos/200?random=7",
                 Brand = "NetCore",
                 Type = "Hats",
                 QuantityInStock = 100
@@ -92,7 +92,7 @@ public static class DbInitializer
                 Description =
                     "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                 Price = 8000,
-                PictureUrl = "/images/products/hat-react1.png",
+                PictureUrl = "http://picsum.photos/200?random=8",
                 Brand = "React",
                 Type = "Hats",
                 QuantityInStock = 100
@@ -103,7 +103,7 @@ public static class DbInitializer
                 Description =
                     "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                 Price = 1500,
-                PictureUrl = "/images/products/hat-react2.png",
+                PictureUrl = "http://picsum.photos/200?random=9",
                 Brand = "React",
                 Type = "Hats",
                 QuantityInStock = 100
@@ -114,7 +114,7 @@ public static class DbInitializer
                 Description =
                     "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                 Price = 1800,
-                PictureUrl = "/images/products/glove-code1.png",
+                PictureUrl = "http://picsum.photos/200?random=10",
                 Brand = "VS Code",
                 Type = "Gloves",
                 QuantityInStock = 100
@@ -125,7 +125,7 @@ public static class DbInitializer
                 Description =
                     "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                 Price = 1500,
-                PictureUrl = "/images/products/glove-code2.png",
+                PictureUrl = "http://picsum.photos/200?random=11",
                 Brand = "VS Code",
                 Type = "Gloves",
                 QuantityInStock = 100
@@ -136,7 +136,7 @@ public static class DbInitializer
                 Description =
                     "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                 Price = 1600,
-                PictureUrl = "/images/products/glove-react1.png",
+                PictureUrl = "http://picsum.photos/200?random=12",
                 Brand = "React",
                 Type = "Gloves",
                 QuantityInStock = 100
@@ -147,7 +147,7 @@ public static class DbInitializer
                 Description =
                     "Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                 Price = 1400,
-                PictureUrl = "/images/products/glove-react2.png",
+                PictureUrl = "http://picsum.photos/200?random=13",
                 Brand = "React",
                 Type = "Gloves",
                 QuantityInStock = 100
@@ -158,7 +158,7 @@ public static class DbInitializer
                 Description =
                     "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
                 Price = 25000,
-                PictureUrl = "/images/products/boot-redis1.png",
+                PictureUrl = "http://picsum.photos/200?random=14",
                 Brand = "Redis",
                 Type = "Boots",
                 QuantityInStock = 100
@@ -169,7 +169,7 @@ public static class DbInitializer
                 Description =
                     "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna.",
                 Price = 18999,
-                PictureUrl = "/images/products/boot-core2.png",
+                PictureUrl = "http://picsum.photos/200?random=15",
                 Brand = "NetCore",
                 Type = "Boots",
                 QuantityInStock = 100
@@ -180,7 +180,7 @@ public static class DbInitializer
                 Description =
                     "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.",
                 Price = 19999,
-                PictureUrl = "/images/products/boot-core1.png",
+                PictureUrl = "http://picsum.photos/200?random=16",
                 Brand = "NetCore",
                 Type = "Boots",
                 QuantityInStock = 100
@@ -190,7 +190,7 @@ public static class DbInitializer
                 Name = "Angular Purple Boots",
                 Description = "Aenean nec lorem. In porttitor. Donec laoreet nonummy augue.",
                 Price = 15000,
-                PictureUrl = "/images/products/boot-ang2.png",
+                PictureUrl = "http://picsum.photos/200?random=17",
                 Brand = "Angular",
                 Type = "Boots",
                 QuantityInStock = 100
@@ -201,18 +201,18 @@ public static class DbInitializer
                 Description =
                     "Suspendisse dui purus, scelerisque at, vulputate vitae, pretium mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut nonummy.",
                 Price = 18000,
-                PictureUrl = "/images/products/boot-ang1.png",
+                PictureUrl = "http://picsum.photos/200?random=18",
                 Brand = "Angular",
                 Type = "Boots",
                 QuantityInStock = 100
             },
         };
 
-        foreach (var product in products)
-        {
-            context.Products.Add(product);
-        }
-
-        context.SaveChanges();
+    foreach (var product in products)
+    {
+      context.Products.Add(product);
     }
+
+    context.SaveChanges();
+  }
 }
